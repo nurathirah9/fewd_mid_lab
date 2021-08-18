@@ -191,6 +191,39 @@ body {
   color: #66727c;
 }
 
+/* box button */
+.textbox{
+  display: none;
+  position: fixed;
+  z-index: 1;
+ top: 0px;
+ left: 0px;
+  background-color: rgba(139, 134, 134, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.content{
+  height: 200px ;
+  position: fixed;
+  z-index: 1;
+ top: 200px;
+ left: 450px;
+ justify-content: center;
+  background-color: rgb(10, 196, 90);
+  border: 4px solid rgb(21, 58, 27);
+  width: 30%;
+  text-align: center;
+  padding-top: 20px;
+}
+.button{
+  display: flex;
+  position: relative;
+  left: 100px;
+  margin-bottom: 50px;
+}
+.dogfood{
+  margin-left: 50px;
+}
 /* mobile */
 @media (min-width: 320px) and (max-width:430px){
   .container{
