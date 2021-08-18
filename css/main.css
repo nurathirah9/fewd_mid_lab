@@ -16,4 +16,314 @@
 body {
   font-family: 'Cabin', sans-serif;
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+}
 
+.grid{
+  display: grid;
+}
+
+
+/* header */
+.rover-header-container{
+  justify-content: space-between;
+}
+.rover-header-container a{
+  padding-top: 10px;
+  text-decoration: none;
+  color: black;
+  margin:0 10px;
+}
+.none{
+  display: none;
+}
+
+
+/* banner */
+.bg_{
+  background-image: url("../img/hero.jpg");
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text{
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+.text p{
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 40%;
+  padding: 5px;
+  color: rgb(31, 30, 30);
+}
+.rover-hero-title{
+  color: rgb(31, 30, 30);
+  font-size: 3rem;
+}
+
+.rover-button {
+  background-color: #14a96d;
+  color: white;
+  width: 30%;
+  padding:20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.rover-button:hover{
+  background-color: rgb(55, 129, 55);
+}
+/* middle */
+.rover-middle-section h2{
+  text-align: center;
+  padding: 30px;
+}
+
+.rover-facts-container{
+  flex-direction: column;
+}
+.rover-two-boxes-container{
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.rover-fact-indiv .flex_column{
+  flex-direction: column;
+}
+.rover-fact-indiv img{
+  width: 70px;
+}
+.flex_column p{
+  color: #66727c;
+}
+
+/* cta */
+.rover-cta-header{ 
+  background-color: rgb(224, 217, 217);
+  text-align: center;
+  padding: 20px;
+}
+.rover-cta-header p{
+  margin-left: 10px;
+
+}
+.rover-cta-container{
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 80%;
+  border: 1px solid rgb(133, 128, 128);
+
+}
+
+.rover-cta-box .rover-cta{
+  background-color: #14a96d;
+  color: white;
+  padding: 20px;
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  border-radius: 10px;
+}
+.rover-facts li{
+  margin-top: 20px;
+}
+.rover-protections a{
+  color:#06748a ;
+}
+
+/* rover-action */
+.rover-action-shot{
+  background-image: url(../img/lady-with-her-dogs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  padding: 50px 0;
+  margin-top: 60px;
+}
+
+.rover-action-quote-container{
+  width: 30%;
+  height: 200px;
+  position: relative;
+  top:-100px;
+  left: 150px;
+  background-color: white;
+  padding: 30px;
+  flex-direction: column;
+}
+.rover-quote{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.rover-quote span{
+  color: rgb(124, 116, 116);
+}
+.rover-action-quote-container a{
+  color:#06748a ;
+}
+
+/* rover 1 2 3 */
+.grid_3{
+  grid-template-columns: repeat(3, 1fr);
+}
+.rover-123-container-title{
+  text-align: center;
+  padding: 60px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.rover-123-item img{
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+}
+.rover-123-item{
+  text-align: center;
+}
+.rover-123-text p{
+  color: #66727c;
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width:430px){
+  .container{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .rover-header-right-mobile{
+      display: block;
+  }
+  .rover-header-right{
+      display:none;
+  }
+  .rover-header-left a{
+    display:none;
+  }
+  /* header */
+  .text{
+    position: absolute;
+    left: 10px;
+    top: 150px;
+  }
+  .text p{
+    font-size: 1rem;
+    padding: 5px;
+    color: rgb(31, 30, 30);
+    width: 100%;
+  }
+  .text p{
+    display: block;
+  }
+  .rover-button {
+    width: 90%;
+    padding: 10px;
+  }
+  .bg_ ,.text h1{
+    display: none;
+  }
+  .rover-hero-container{
+    height: 300px;
+  }
+
+  .rover-button rover-cta-mobile {
+    display: block;
+  }
+  .rover-mobile-hero-container{
+    display: block ;
+  }
+  /* middle */
+
+  .grid_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .rover-two-boxes-container{
+    grid-template-columns: 1fr;
+    height: 1100px;
+  }
+  .rover-action-shot{
+    width: 100%;
+  background-position: center;
+  }
+  .rover-cta-container{
+    width: 100%;
+ 
+  }
+  .rover-action-quote-container{
+    position: relative;
+    left: 0;
+    top: -50px;
+    width: 100%;
+    text-align: start;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+  }
+  .rover-quote{
+    font-size: 1rem;
+    text-align: start;
+  }
+  .flex_column h3{
+    text-align: start;
+    font-size: large;
+  }
+  .flex_column p{
+    text-align: start;
+  }
+  .rover-fact-indiv img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+  /* rover 123 */
+  .grid_3{
+    grid-template-columns: 1fr;
+
+  }
+  .rover-123-item{
+    display: flex;
+    height: 50px;
+    margin:20px 0 ;
+  }
+  .rover-123-text{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: small;
+
+  }
+  .rover-123-text h3 {
+    text-align: start ;
+    margin: 0;
+  }
+  .rover-123-text p {
+    margin: 0;
+    text-align: start ;
+  }
+  .rover-123-item img{
+    width: 50px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .rover-123-container-title{
+    
+    padding: 20px;
+    font-size: 1.0rem;
+  }
+
+  .rover-cta-box{
+    height: 500px;
+    width: 100%;
+  }
+
+
+}
