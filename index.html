@@ -24,25 +24,32 @@
         <a class="rover-header-link" href="#">Our Services</a>
       </section>
       <section class="rover-header-right flex">
-        <a class="rover-header-link" href="#">Sign Up</a>
+        <a id="signup_web" class="rover-header-link" href="#">Sign Up</a>
         <a class="rover-header-link" href="#">Sign In</a>
         <a class="rover-header-link" href="#">Help</a>
       </section>
-      <section class="rover-header-right-mobile none">
-      <button>
+      <section class="rover-header-right-mobile ">
+      <button id="mobile-menu-button">
         <img src="img/hamburger.svg" alt="hamburger-icon">
       </button>
       </section>
+      <div id="mobile_menu" class="rover-header-mobile ">
+        <a id="Signup" class="rover-header-link" href="#">Sign Up</a>
+        <a class="rover-header-link" href="#">Sign In</a>
+        <a class="rover-header-link" href="#">Help</a>
+        <button id="close">X</button>
+      </div>
     </header>
 
     <!--Rover Hero Container-->
     <section class="rover-hero-container ">
       <div class="bg_"></div>
-      <div class="text">
-      <h1 class="rover-hero-title">We're the Dog People</h1>
+      <div  class="text">
+      <h1 id="text"class="rover-hero-title">We're the Dog People</h1>
       <p>Book trusted, local pet sitters and walkers who will care for your dog or cat like you would.</p>
       <div id="search" class="rover-button rover-cta">Search</div>
       <div class="rover-button rover-cta-mobile none">Discover local sitters</div>
+
     </div>
     </section>
 
@@ -109,7 +116,7 @@
                 <li>All sitters provide a detailed profile and personal information</li>
                 <li>All sitters are approved by our team of sitter specialists</li>
               </ul>
-              <div class="rover-cta ">Book your next Rover sitter</div>
+              <div id="rover-cta-button" class="rover-cta ">Book your next Rover sitter</div>
             </div>
           </div>
           <p class="rover-protections">All services booked on Rover are backed by the Rover Guarantee, 24/7 Support, Photo Updates, and our <a href="#">Reservation Protection</a>.</p>
@@ -157,14 +164,19 @@
     <div id="box" class="textbox ">
       <div class="content ">
           
-          <p> What you want to search</p>
-          <div class="button">
-          <button id="Cat" class="dogbreed" >Dog Breed</button>
-          <button id="Dog" class="dogfood" >Dog Food</button>
+          <p>Please fill in </p>
+          <div class="button"></div>
+          <div>Name</div>
+          <input id="name">
+          <div>Email</div>
+          <input id="email">
+          <div>Password</div>
+          <input id="password" type="text">
           </div>
-          <button id="close" >Cancel</button>
+          <button id="Signup" >SignUp</button>
+          <button id="Cancel" >Cancel</button>
+          
       </div>
-     
 </div>
 
   </main>
@@ -172,4 +184,3 @@
 </body>
 
 </html>
-

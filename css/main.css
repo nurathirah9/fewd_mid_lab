@@ -39,10 +39,72 @@ body {
   color: black;
   margin:0 10px;
 }
+.rover-header-right-mobile{
+  display: none;
+}
 .none{
   display: none;
 }
+#mobile_menu{
+  
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left:0;
+  right: 0;
+  z-index: 12;
+  display: none;
+}
 
+.show{
+  /*!important overrides all*/
+   display: block !important;
+   animation: move .35s ease-in-out;
+}
+
+@media (max-width:480px){
+
+  .rover-header-right-mobile{
+    display: block;
+  }
+  .rover-header-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 80%;
+  }
+  .rover-header-mobile a{
+    background-color: #14a96d;
+    color: rgb(247, 240, 240);
+  font-size: large;}
+  
+  .rover-header-mobile a:hover{
+    background-color: #138054;
+    color: white(247, 240, 240);
+  font-size: larger;
+  font-weight: bolder;}
+  
+
+}
+
+@keyframes move {
+  0%{
+    transform: translateY(100%)
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+@keyframes move {
+  0%{
+    transform: translate(100%)
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
 
 /* banner */
 .bg_{
@@ -63,10 +125,11 @@ body {
   padding: 5px;
   color: rgb(31, 30, 30);
 }
-.rover-hero-title{
+.text h1{
   color: rgb(31, 30, 30);
   font-size: 3rem;
 }
+
 
 .rover-button {
   background-color: #14a96d;
@@ -191,49 +254,28 @@ body {
   color: #66727c;
 }
 
-/* box button */
+
 .textbox{
-  display: none;
-  position: fixed;
-  z-index: 1;
- top: 0px;
- left: 0px;
-  background-color: rgba(139, 134, 134, 0.4);
-  width: 100%;
-  height: 100%;
-}
-.content{
-  height: 200px ;
-  position: fixed;
-  z-index: 1;
- top: 200px;
- left: 450px;
- justify-content: center;
-  background-color: rgb(10, 196, 90);
-  border: 4px solid rgb(21, 58, 27);
-  width: 30%;
+  background-color: rgba(209, 209, 209, 0.8);
   text-align: center;
-  padding-top: 20px;
+  border-radius:10px;
+  border: 3px gray solid;
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  width: 30%;
+  z-index: 15;
+  display: none;
 }
-.button{
-  display: flex;
-  position: relative;
-  left: 100px;
-  margin-bottom: 50px;
-}
-.dogfood{
-  margin-left: 50px;
-}
+
 /* mobile */
-@media (min-width: 320px) and (max-width:430px){
+@media (max-width:480px){
   .container{
     width:100%;
     margin: 0 auto;
     text-align: center;
   }
-  .rover-header-right-mobile{
-      display: block;
-  }
+  
   .rover-header-right{
       display:none;
   }
@@ -272,6 +314,20 @@ body {
   .rover-mobile-hero-container{
     display: block ;
   }
+
+
+
+/* signup */
+
+
+.textbox{
+  background-color: rgb(209, 209, 209);
+  top: 60px;
+  right: 25px;
+  width: 80%;
+}
+
+
   /* middle */
 
   .grid_2{

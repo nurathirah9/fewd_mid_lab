@@ -17,18 +17,43 @@
  * 1) Make the responsive menu work!
  * 2) Implement a modal window - "Sign up now" CTA when someone clicks the 'Sign Up' button
  */ 
+ let ctabutton = document.querySelector("#rover-cta-button")
 
- let searchbtn = document.querySelector("#search");
- let box =  document.querySelector("#box");
- let closebtn =  document.querySelector("#close");
+ ctabutton.addEventListener("mouseover", function(){
+  ctabutton.style.backgroundColor = "red";
+ })
+ ctabutton.addEventListener("mouseout", function(){
+     ctabutton.style.backgroundColor = "#138054";
+    })
  
- searchbtn.addEventListener("click", function() {
-     box.style.display = "block";
+ ctabutton.addEventListener("click", function(){
+   ctabutton.innerHTML ="Thanks!!"
+   
+ })
+ 
+ document.querySelector("#mobile-menu-button").addEventListener("click", function(){
+     document.querySelector("#mobile_menu").classList.add("show")
+ })
+ 
+ document.querySelector("#close").addEventListener("click", function(){
+     document.querySelector("#mobile_menu").classList.remove("show")
+ })
+ 
+ let signupbtn1 = document.querySelector("#signup_web");
+ let box =  document.querySelector("#box");
+ let closebtn =  document.querySelector("#Cancel");
+ let signupbtn = document.querySelector("#Signup");
+ 
+ signupbtn1.addEventListener("click", function() {
+     console.log(box.style.display = "block")
      
  })
  closebtn.addEventListener("click", function(){
      box.style.display = "none";
  })
- document.addEventListener("click", function(e){
-    if(e.target==box){box.style.display = "none";} 
+ 
+ signupbtn.addEventListener("click", function() {
+     box.style.display = "block";
+     
  })
+ 
